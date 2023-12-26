@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dachi Sum Alert</title>
+</head>
+<body>
+    <h1>JS is awesome</h1>
+    <script>
+
+        var sum = 0;
+
+        while(true){
+
+            var userInput = prompt("Please insert a number, type 'end' to stop.");
+            if(userInput.toLocaleLowerCase() === 'end'){
+                break;
+            }else if( isNaN( Number(userInput) ) ){
+                alert("Please insert only numbers,or the word 'end'.")
+            }else{
+                sum += Number(userInput);
+            } 
+        }
+        alert(sum);
+        
+        
+
+    </script>
+</body>
+</html>
